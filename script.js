@@ -37,7 +37,7 @@ for (let p of places){
     let m = new mapboxgl.Marker()
     .setLngLat(p.position)
     .setPopup(new mapboxgl.Popup({offset:25})
-    .setHTML("<p>${p.name}</p>"))
+    .setHTML(`<p>${p.name}</p>`))
     .addTo(map);
     
     markers.push(m);
